@@ -1,0 +1,15 @@
+{
+    "name": "gubnota/gubnota",
+    "description": "Autoload class helper to call class methods by using Laravel 4 alike mechanism via static calling and by-pass variables to other method which simplifies storing same class instace without using global keyword quite outdated solution. With composer pakagist psr-0 autoloader use better, otherwise please declare autoloading in psr-0 (or 4) PHP default order by looking via folder alike class namespaces, etc.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladislav Muravyev",
+            "email": "me@gubnota.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4"
+    }
+}
