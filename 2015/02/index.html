@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кодирование видео и gif screencast</title>
+<style>
+body{background: #fff;
+padding: 0.1em 0.2em;
+font-size: 1em;font-family: Verdana;}
+a {color: #39c;}
+.btn{
+    box-sizing: content-box;
+    border-radius: 3px;
+    color: inherit;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 0.3em;
+    vertical-align: middle;
+    min-width: 80px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background: none repeat scroll 0 0 #39c;
+    box-shadow: 0 -2px 0 rgba(0,0,0,0.3) inset;
+    line-height: 20px;
+    text-align: center;
+}
+.btn:active{box-shadow: 0 0 10px rgba(0,0,0,0.3) inset,0 -2px 0 rgba(0,0,0,0.3) inset;}
+.btn.c2{
+    background: none repeat scroll 0 0 #3775dd;
+}
+.btn.c3{
+    background: none repeat scroll 0 0 #D42A1F;
+    border: 0 none;
+}
+.clr{clear: both;}
+a.btn,a.btn:hover {color: #fff;text-decoration: none;}
+* {margin: 0;text-shadow:0 1px 0 rgba(255, 255, 255, 0.3); color: #333;max-width: 100%;}
+img{margin: 0 auto !important;text-align: center;display: block;height: auto !important;float: none;}
+p,div,small,table,ul,ol,pre{clear: both;float: left;margin-bottom: 1em;}
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -1px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 0 1px #eef;
+    font-weight: 200;
+    display: inline-block;
+    color: #39c;
+    padding: 0.4em 0em;
+    clear: both;
+    float: left;
+}
+h2{padding-left: 0.3em;color:#39c}
+h3{padding-left: 0.6em;color:#39c}
+h4{padding-left: 0.9em;color:#39c}
+h5{padding-left: 1.2em;color:#39c}
+h1 {font-size: 2.2em}
+h2 {font-size: 1.8em}
+h3 {font-size: 1.5em}
+h4 {font-size: 1.3em}
+h5 {font-size: 1.1em}
+h5 {font-size: 0.9em}
+
+pre{background: #F1F1F1;border-top: 1px solid rgba(124, 117, 132, 0.3);    padding: 0.4em 0.6em;
+    border-bottom: 1px solid rgba(124, 117, 132, 0.2);
+word-wrap: break-word; white-space: pre-wrap;
+}
+.cent{float: none; text-align: center; margin: 0.1em auto;}
+ol li{list-style-type: decimal;}
+ul,ol,li{clear:both;float: left;}ul,ol{margin-left: 1em;}
+table {
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 0.8em;
+    margin: 0 0 1.5em;
+}
+table td {
+    border: 1px solid #bbb;
+    padding: 6px 10px;
+    vertical-align: top;
+}
+th, td, caption {
+    float: none !important;
+    padding: 4px 10px 4px 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+table tr:nth-child(2n+1) td {
+    background: none repeat scroll 0 0 #fff;
+}
+table tr:first-child td {
+    background: linear-gradient(to bottom, #f1f1f1 1%, #bbb 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #bbb;
+    color: #333;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}table tr:first-child td *{color: #333;}
+body:after{content: " ";float: left;clear: both;min-height: 100px;width: 100%;}
+@media screen and (min-width:1000px){
+.content{margin: 3em auto; float: none; max-width: 900px;
+}
+body{background: -moz-linear-gradient(left, #eee 0%, #eee 5%, #ffffff 5.01%, #ffffff 95%, #eee 95.01%, #eee 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eee), color-stop(9%,#eee), color-stop(5.01%,#ffffff), color-stop(95%,#ffffff), color-stop(95.01%,#eee), color-stop(100%,#eee));
+background: -webkit-linear-gradient(left, #eee 0%,#eee 5%,#ffffff 5.01%,#ffffff 95%,#eee 95.01%,#eee 100%);
+background: -o-linear-gradient(left, #eee 0%,#eee 5%,#ffffff 5.01%,#ffffff 95%,#eee 95.01%,#eee 100%);
+background: -ms-linear-gradient(left, #eee 0%,#eee 5%,#ffffff 5.01%,#ffffff 95%,#eee 95.01%,#eee 100%);
+background: linear-gradient(to right, #eee 0%,#eee 5%,#ffffff 5.01%,#ffffff 95%,#eee 95.01%,#eee 100%)}
+}
+ul.thumbs_sheet{width: auto;text-align: center; float: none;margin:0 auto;}
+ul.thumbs_sheet li{
+list-style-type: none;
+display: inline;
+float: left;
+clear: none;
+max-width: 33%;
+line-height: 2em;
+vertical-align: top;
+min-height: 250px;
+padding-bottom: 1em;
+box-sizing:border-box;
+/* add 2014-01-08 */
+margin: 20px 10px;
+box-shadow: 0 1px 3px #c1c1c1;
+border-radius: 8px;
+background-color: rgba(255, 255, 255, 0.2);
+/* end 2014-01-08 */
+}
+/* add 2014-01-08 */
+ul.thumbs_sheet li:hover{
+box-shadow: 0 0 6px 2px #4cb1ff;
+background-color: rgb(242,242,242);
+}
+/* end 2014-01-08 */
+ul.thumbs_sheet li a.thumb_desc{
+    color: #666;
+    display: block;
+    text-shadow:0 1px 0 #fff;
+    text-decoration: none;
+}
+ul.thumbs_sheet li{
+    border: 1px solid #eee;
+}
+ul.thumbs_sheet li img {
+    height: auto;
+    max-width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+ul.content li{list-style-type: none;line-height: 0.3em;}
+.right_quote{float: right; max-width: 80%;font-style: italic;font-size: 80%;}
+.f{color: #333;border-left:4px solid #39c; padding: 10px;}
+.f:hover{background-color: rgba(51, 153, 204, 0.2);}
+.s{color: #333;border-left:4px solid #999; padding: 10px;}
+.s:hover{background-color: rgba(204, 204, 204, 0.2);}
+div.diagram {width: 100%;}
+div.diagram img{padding: 2px;border: 1px solid #eee; box-sizing: border-box;width: 100%;}
+div.diagram p{text-align: center;width: 100%;color: #666;}
+
+@media all and (max-width: 800px){
+ul.thumbs_sheet li{width: 100% !important;float: none;border: none;}
+}
+.added{background: #FCF6D0;}
+</style>
+</head>
+<body>
+<div class="content">
+<a href="#" name="top"></a>
+<h1>Кодирование видео и gif screencast</h1>
+<h5>Содержание</h5>
+<ul class="content">
+    <li><a href="#top"><small>наверх</small></a></li>
+    <li><a href="#bottom"><small>вниз</small></a></li>
+</ul>
+<div class="right_quote">11 фев 2015</div>
+<p class="f">Сегодня сравнил между собой скринкаст-видео с экрана в формате gif и html5 видео. html5 видео выиграл, зато gif можно встраивать в микроблоггинг китайский, и прочее.</p>
+<p class="s">Программы создающие gif анимацию: GifGrabber и VideoGIF Free. видео создавалось встроенными средствами захвата экрана (QuickTime) и ffmpeg кодировщиком.</p>
+<pre><code># Кодирование видео
+ffmpeg -i 201502111820.mov \
+-acodec libvorbis -ac 2 -ab 0k -ar 33600 -t 15 \
+-b:v 250k -s 684x608 201502111820.webm
+
+ffmpeg -i 201502111820.mov \
+-ac 2 -ab 0k -ar 44100 -strict -2 -t 15 \
+-b:v 250k -s 684x608 201502111820.mp4
+
+ffmpeg -i 201502111820.mov \
+-ac 2 -ab 0k -ar 44100 -t 15 \
+-vcodec h264 -quality good \
+-b:v 250k -s 684x608 201502111820.flv
+
+ffmpeg -i 201502111826.gif \
+-acodec libvorbis -ac 2 -ab 0k -ar 33600 -t 10 \
+-b:v 220k -s 480x300 201502111826.webm
+
+ffmpeg -i 201502111826.gif \
+-ac 2 -ab 0k -ar 44100 -strict -2 -t 10 \
+-b:v 190k -s 480x300 201502111826.mp4
+
+ffmpeg -i 201502111826.gif \
+-ac 2 -ab 0k -ar 44100 -t 10 \
+-vcodec h264 -quality good \
+-b:v 190k -s 480x300 201502111826.flv
+
+<a href="http://gubnota.github.io/gubnota/2015/02/201502111826.gif" target="_blank">http://gubnota.github.io/gubnota/2015/02/201502111826.gif</a> 620 Kb
+<a href="http://gubnota.github.io/gubnota/2015/02/201502111826.webm" target="_blank">http://gubnota.github.io/gubnota/2015/02/201502111826.webm</a> 111 Kb
+<a href="http://gubnota.github.io/gubnota/2015/02/201502111826.mp4" target="_blank">http://gubnota.github.io/gubnota/2015/02/201502111826.mp4</a> 117 Kb
+<a href="http://gubnota.github.io/gubnota/2015/02/201502111826.flv" target="_blank">http://gubnota.github.io/gubnota/2015/02/201502111826.flv</a> 117 Kb
+
+<a href="http://gubnota.github.io/gubnota/2015/02/201502111820.gif" target="_blank">http://gubnota.github.io/gubnota/2015/02/201502111820.gif</a> 1400 Kb
+<a href="http://gubnota.github.io/gubnota/2015/02/201502111820.webm" target="_blank">http://gubnota.github.io/gubnota/2015/02/201502111820.webm</a> 338 Kb
+<a href="http://gubnota.github.io/gubnota/2015/02/201502111820.mp4" target="_blank">http://gubnota.github.io/gubnota/2015/02/201502111820.mp4</a> 356 Kb
+<a href="http://gubnota.github.io/gubnota/2015/02/201502111820.flv" target="_blank">http://gubnota.github.io/gubnota/2015/02/201502111820.flv</a> 357 Kb</pre>
+</code></pre>
+<p class="f">
+<script>document.write('<video muted="muted" audio="muted" autoplay loop poster="./201502111820.gif" preload="false" style="margin-top:0px" id="bottom_video">'+
+'<source type="video/mp4" src="./201502111820.mp4" />'+
+'<source type="video/webm" src="./201502111820.webm" />'+
+'</video>');</script></p>
+<p><a href="#top" class="right_quote"><small>наверх</small></a></p>
+</div></body>
+</html>
