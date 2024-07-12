@@ -1,4 +1,4 @@
-I am a researcher area of my expertise including but not limited to:
+I am a researcher. The areas of my expertise including but not limited to:
 * ML LLM AI engineering
 * Mobile development (Flutter, Swift, Kotlin)
 * Frontend development (React.js and Vue.js)
