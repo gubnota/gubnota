@@ -7,3 +7,4 @@ I am a researcher. The areas of my expertise including but not limited to:
 * WebGL-powered 3d models (Blender-made)
 
 (MSc degree in Organic Chemistry)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gubnota&layout=donut-vertical)](https://github.com/anuraghazra/github-readme-stats)
