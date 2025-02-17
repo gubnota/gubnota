@@ -1,10 +1,10 @@
-I am a researcher. The areas of my expertise including but not limited to:
-* ML LLM AI engineering
+I am a software engineer and a researcher. My areas of expertise include, but are not limited to:
 * Mobile development (Flutter, Swift, Kotlin)
 * Frontend development (React.js and Vue.js)
-* Some backend experience (Node.js and fastAPI)
-* 2nd life for some old-fashioned techstack to support some projects when needed (e.g. WP powered backend with Nuxt.js SEO-opitmized frontend pages)
-* WebGL-powered 3d models (Blender-made)
+* Some backend experience (Node.js and Python)
+* Machine learning (time series analysis)
+* 3D modeling (Blender, WebGL)
+* Revitalizing older tech stacks to support projects when needed (e.g., a WordPress-powered backend with an SEO-optimized Nuxt.js frontend)
 
 (MSc degree in Organic Chemistry)
 ![skills](https://skillicons.dev/icons?i=swift,androidstudio,flutter,kotlin,react,vuejs,docker,fastapi,git,github,linux,nginx,php,py,nodejs,sqlite,selenium,vim,vscode,vite,ts)
