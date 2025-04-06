@@ -7,7 +7,7 @@ I am a software engineer and a researcher. My current areas of expertise may inc
 (MSc degree in Organic Chemistry)
 ![skills](https://skillicons.dev/icons?i=swift,androidstudio,flutter,kotlin,react,vuejs,docker,fastapi,git,github,linux,nginx,php,py,nodejs,sqlite,selenium,vim,vscode,vite,ts)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gubnota&layout=donut-vertical&langs_count=7&hide=html,css,javascript,hack,shell,ruby)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gubnota&layout=donut-vertical&langs_count=8&hide=html,css,javascript,hack,shell,ruby)](https://github.com/anuraghazra/github-readme-stats)
 
 ### Socials
 
