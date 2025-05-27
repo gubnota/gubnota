@@ -1,5 +1,5 @@
 I am a software engineer and a researcher. My current areas of expertise may include, but not limited to:
-* Mobile development (Flutter, Swift, Kotlin)
+* Mobile development (Cross-platform, Android, iOS)
 * Frontend development (React.js and Vue.js)
 * Backend development (Node.js, Python, Go, Postgres, PHP, RabbitMQ like message brokers)
 * 3D modeling (Blender, WebGL)
